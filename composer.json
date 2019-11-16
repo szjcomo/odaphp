@@ -1,0 +1,21 @@
+{
+    "name": "szjcomo/odaphp",
+    "description": "基于szjcore1.1版本开发的项目框架",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "szjcomo",
+            "email": "814655481@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "szjcomo/szjcore": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}

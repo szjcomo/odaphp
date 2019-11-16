@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>思智捷科技</title>
+</head>
+<body>
+	<h1>用户列表数据</h1>
+	<table border="1" width="500">
+		<tr>
+			<td>序号</td>
+			<td>姓名</td>
+			<td>密码</td>
+			<td>创建时间</td>
+		</tr>
+		{volist name="userlist" id="item"}
+			<tr>
+				<td>{$item.id}</td>
+				<td>{$item.username}</td>
+				<td>{$item.password}</td>
+				<td>{$item.create_time}</td>
+			</tr>
+		{/volist}
+	</table>
+</body>
+</html>
