@@ -1,4 +1,1 @@
 /vendor/
-/app/tcpsocket/
-/app/websocket/
-tcpclient.php
