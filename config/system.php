@@ -17,7 +17,7 @@ return [
 	/**
 	 * 每个控制器注册最大的链接数
 	 */
-	'HTTP_CONTROLLER_POOL_MAX_NUM' 	=> 600,
+	'HTTP_CONTROLLER_POOL_MAX_NUM' 	=> 500,
 	/**
 	 * 是否开启跨域处理请求
 	 */
@@ -25,7 +25,7 @@ return [
 	/**
 	 * 是否开启IP限流策略
 	 */
-	'APP_IPLIMIT_OPEN' 				=> true,
+	'APP_IPLIMIT_OPEN' 				=> false,
 	/**
 	 * 开启IP限流时每秒最大请求次数
 	 */
@@ -41,7 +41,7 @@ return [
 		/**
 		 * 是否开启模板编译缓存,设为false则每次都会重新编译 开发阶段建议false
 		 */
-		'tpl_cache'					=> false,
+		'tpl_cache'					=> true,
 		/**
 		 * 模版编译后缓存目录
 		 */
@@ -60,7 +60,7 @@ return [
 	/**
 	 * 是否开启热重载 在项目开发时建议开启
 	 */
-	'APP_HOT_RELOAD_START'			=> true,
+	'APP_HOT_RELOAD_START'			=> false,
 	/**
 	 * 热重载配置项  只有在开启热重载时才有用
 	 */

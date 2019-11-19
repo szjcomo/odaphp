@@ -10,7 +10,7 @@
 
 namespace app\controllers;
 
-use szjcomo\szjcore\Views           as ViewsController;
+use szjcomo\szjcore\Controller      as ViewsController;
 use szjcomo\szjcore\Cache           as AppCache;
 
 /**
@@ -26,8 +26,9 @@ class Index extends ViewsController
            $result = \szjcomo\szjcore\Mysql::name('admin_user')->select();
            AppCache::set('admin_user',$result);
         }
-        $this->assign('userlist',$result);
-        return $this->fetch('index');
+        //$this->assign('userlist',$result);
+        //return $this->fetch('index');
+        return $this->appJson($this->appResult('SUCCESS',$result,false,0));
     }
     /**
      * [upload 上传测试]

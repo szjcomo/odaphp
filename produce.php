@@ -11,7 +11,7 @@ return [
             /**
              * 设置启动的Worker进程数
              */
-            'worker_num'                    => 8,
+            'worker_num'                    => 4,
             /**
              * 设置异步重启开关。设置为true时，将启用异步安全重启特性，Worker进程会等待异步事件完成后再退出。
              */
@@ -41,7 +41,7 @@ return [
             /**
              * 配置Task进程的数量，配置此参数后将会启用task功能
              */
-            'workerNum'=>4,
+            'workerNum'=>2,
             /**
              * 最大投递任务数
              */

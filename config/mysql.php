@@ -16,7 +16,7 @@ return [
 		//是否注册mysql作为默认数据库
 		'register_mysql'		   =>true,	
 		//连接池回收时间 这里并不一定是进行垃圾回收 具体信息可查看 easyswoole 官方说明
-		'maxIdleTime' 			   => 15,
+		'maxIdleTime' 			   => 7200,
 		//最大创建连接池对象  这是并不是真正的mysql连池数,只是对象的连接数
 		'maxObjectNum'			   => 20,
 		//最小创建连接池对象  同上一样的道理
@@ -42,7 +42,7 @@ return [
 				//mysql链接超时时间
 				'timeout'              => 10,
 				//开启调式模式 会直接输出sql语句在控制台中
-				'debug'                => true,
+				'debug'                => false,
 				//设置字符集
 				'charset'              => 'utf8',
 				//断线重链次数,并不是越大越好 适中为好

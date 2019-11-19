@@ -8,4 +8,6 @@
  * |-----------------------------------------------------------------------------------
  */
 
-\EasySwoole\EasySwoole\Command\CommandContainer::getInstance()->set(new \app\command\Szjkj());
+if(class_exists('\szjcomo\odaHelp\Szjkj')){
+	\EasySwoole\EasySwoole\Command\CommandContainer::getInstance()->set(new \szjcomo\odaHelp\Szjkj());	
+}
