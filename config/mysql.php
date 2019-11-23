@@ -14,13 +14,15 @@ return [
 	 */
 	'MYSQL'=>[
 		//是否注册mysql作为默认数据库
-		'register_mysql'		   =>true,	
+		'register_mysql'		   => true,	
 		//连接池回收时间 这里并不一定是进行垃圾回收 具体信息可查看 easyswoole 官方说明
-		'maxIdleTime' 			   => 7200,
-		//最大创建连接池对象  这是并不是真正的mysql连池数,只是对象的连接数
-		'maxObjectNum'			   => 20,
-		//最小创建连接池对象  同上一样的道理
-		'minObjectNum'			   => 5,
+		'maxIdleTime' 			   => 15,
+		//最大创建连接池对象  这是并不是真正的mysql连池数,只是对象的连接数 当真正的高并发来临时处理 一般很难打满 具体视机器的性能
+		'maxObjectNum'			   => 50,
+		//最小创建连接池对象  同上一样的道理 可应用一般的并发请求
+		'minObjectNum'			   => 10,
+		//连接池检测时间 默认是30秒检测一次,这里更改为10秒检测一次
+		'intervalCheckTime'		   => 10 * 1000,
 		//数据库连接配置项
 		'connecConfigs'			   => [
 			/**
