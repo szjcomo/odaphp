@@ -8,19 +8,14 @@
  * |-----------------------------------------------------------------------------------
  */
 
-namespace app\controllers\Admin;
+namespace app\controllers;
 
-use app\controllers\Admin 			as AdminController;
+use szjcomo\szjcore\Controller      as ViewsController;
 
 /**
- * 不需要视图的继承
+ * 前台控制器
  */
-class Index extends AdminController
+class Home extends ViewsController
 {
-	
-	public function index()
-	{
-		return $this->appJson($this->appResult('SUCCESS'));
-	}
 
 }

@@ -19,7 +19,7 @@ return [
 		/**
 		 * session前缀
 		 */
-		'sessionName'=>'szjkj',
+		'sessionName'=>'SZJKJSESSION',
 		/**
 		 * session过期时间 单位秒
 		 */

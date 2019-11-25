@@ -16,7 +16,7 @@ return [
 	 */
 	'REDIS'	=> [
 		//是否注册redis
-		'register_redis'		   => true,	
+		'register_redis'		   => false,	
 		//连接池回收时间 这里并不一定是进行垃圾回收 具体信息可查看 easyswoole 官方说明
 		'maxIdleTime' 			   => 15,
 		//最大创建连接池对象

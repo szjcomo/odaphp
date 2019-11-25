@@ -25,7 +25,7 @@ return [
 	/**
 	 * 是否开启IP限流策略
 	 */
-	'APP_IPLIMIT_OPEN' 				=> false,
+	'APP_IPLIMIT_OPEN' 				=> true,
 	/**
 	 * 开启IP限流时每秒最大请求次数
 	 */
@@ -60,7 +60,7 @@ return [
 	/**
 	 * 是否开启热重载 在项目开发时建议开启
 	 */
-	'APP_HOT_RELOAD_START'			=> false,
+	'APP_HOT_RELOAD_START'			=> true,
 	/**
 	 * 热重载配置项  只有在开启热重载时才有用
 	 */

@@ -8,19 +8,15 @@
  * |-----------------------------------------------------------------------------------
  */
 
-namespace app\controllers\Admin;
+namespace app\controllers;
 
-use app\controllers\Admin 			as AdminController;
+use szjcomo\szjcore\Controller 		as BaseController;
 
 /**
- * 不需要视图的继承
+ * 所有控制器基类
  */
-class Index extends AdminController
+class Base extends BaseController
 {
-	
-	public function index()
-	{
-		return $this->appJson($this->appResult('SUCCESS'));
-	}
+
 
 }

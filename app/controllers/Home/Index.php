@@ -8,15 +8,15 @@
  * |-----------------------------------------------------------------------------------
  */
 
-namespace app\controllers;
+namespace app\controllers\Home;
 
-use szjcomo\szjcore\Controller      as ViewsController;
+use app\controllers\Home            as HomeController;
 use szjcomo\szjcore\Cache           as AppCache;
 
 /**
  * 需要视图的继承关系
  */
-class Index extends ViewsController
+class Index extends HomeController
 {
 
     public function index()

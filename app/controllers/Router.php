@@ -11,7 +11,7 @@
 namespace app\controllers;
 
 use szjcomo\szjcore\Router 		as BaseRouter;
-use app\routers\IndexRouter		as IndexRouterConfig;
+use app\routers\Home\Index		as HomeIndexRouter;
 
 /**
  * 路由注册功能
@@ -27,18 +27,8 @@ class Router extends BaseRouter
 	 */
 	public function registerRouter($router)
 	{
-		/**
-		 * 首页路由
-		 */
-		IndexRouterConfig::register($router);
-
-		/**
-		 * 文章路由
-		 */
-		
-		/**
-		 * 配置路由
-		 */
+		//首页路由
+		HomeIndexRouter::register($router);
 	}
 
 }

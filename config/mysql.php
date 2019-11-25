@@ -44,7 +44,7 @@ return [
 				//mysql链接超时时间
 				'timeout'              => 10,
 				//开启调式模式 会直接输出sql语句在控制台中
-				'debug'                => false,
+				'debug'                => true,
 				//设置字符集
 				'charset'              => 'utf8',
 				//断线重链次数,并不是越大越好 适中为好

@@ -45,4 +45,33 @@ abstract class Base
 	{
 		return ['info'=>$info,'data'=>$data,'err'=>$err,'code'=>$code];
 	}
+	/**
+	 * [__callStatic 调用静态方法获取实例]
+	 * @author 	   szjcomo
+	 * @createTime 2019-11-21
+	 * @param      [type]     $method [description]
+	 * @param      [type]     $args   [description]
+	 * @return     [type]             [description]
+	 */
+	public static function __callStatic($method,$args)
+	{
+    	switch($method) {
+    		case 'getInstance':
+    			return self::callGetInstance($args);
+    			break;
+    	}
+        return null;
+	}
+	/**
+	 * [callGetInstance 获取调用的静态实例]
+	 * @author 	   szjcomo
+	 * @createTime 2019-11-21
+	 * @param      [type]     $args [description]
+	 * @return     [type]           [description]
+	 */
+	public static function callGetInstance($args = null)
+	{
+		if(empty($args)) return new static;
+		return new static($args);
+	}
 }

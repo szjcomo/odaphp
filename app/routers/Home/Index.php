@@ -8,12 +8,13 @@
  * |-----------------------------------------------------------------------------------
  */
 
-namespace app\routers;
+
+namespace app\routers\Home;
 
 /**
  * 首页路由
  */
-class IndexRouter
+class Index
 {
 	/**
 	 * [register 实现路由注册]
@@ -24,14 +25,8 @@ class IndexRouter
 	 */
 	public static function register($router)
 	{
-		/**
-		 * 首页测试
-		 */
-		$router->addRoute('GET','/','Index/index');
-		/**
-		 * 首页文件上传
-		 */
-		$router->addRoute('GET','/upload','Index/upload');
+		//首页访问路由
+		$router->addRoute('GET','/','/Home/Index/index');
 	}
 
 }
